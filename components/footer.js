@@ -13,7 +13,7 @@ function Footer() {
                         />
                         <div className="row mt-5">
                             <p>
-                                MegaFi allow you to discover emerging non-fungible token(NFT).{" "}
+                                Internet Of NFTs.{" "}
                             </p>
                         </div>
                     </div>
