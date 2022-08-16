@@ -9,9 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.2.5",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@thirdweb-dev/contracts": "^3.0.4",
+    "@thirdweb-dev/react": "^2.6.3",
+    "@thirdweb-dev/sdk": "^2.3.36",
+    "bootstrap": "^5.2.0",
+    "ethers": "^5.6.9",
+    "jquery": "^3.6.0",
+    "next": "^12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "thirdweb": "^0.6.11",
+    "web3": "^1.7.5"
   },
   "devDependencies": {
     "eslint": "8.22.0",
