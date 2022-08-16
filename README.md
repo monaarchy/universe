@@ -1,34 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+MEGAFI- Your Internet of NFTs!
+Once upon a time, after the big bang! The world saw the steady rise of brilliant minds that created all forms of tangible and intangible materials from nothing. This set of individuals was called creatives because of the excellence of their imagination. Notwithstanding their ability to birth new ideas, they were exploited for everything they ever created! The blockchain brought about a revolution, providing an opportunity for all creatives to benefit from their ideas. Nonetheless, there has continued to be an imbalance, and unfair distribution of attention as lots of projects barely saw daylight. In solving this problem for existing and prospective NFT and defi projects, Megafi, the internet of NFTs, builds value by developing the needed Utility to help projects thrive.
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Megafi enables web3 players to make the most out of the internet by providing an NFT DEFI platform to earn, trade, and accomplish success in different dimensions.
