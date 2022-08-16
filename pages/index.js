@@ -22,7 +22,7 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-6">
               <div className="row mt-5 mb-5">
-                <p className="top-heading"> The Internet Of </p>
+                <p className="top-heading">Internet Of </p>
                 <p className="top-heading ">
                    <b className="repeat ">NFTS</b>
                 </p>
