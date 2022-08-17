@@ -1,4 +1,5 @@
-import { useContract, useContractCall, useAddress, useMetamask } from "@thirdweb-dev/react";
+import { useContract, useContractCall, useAddress, useNetwork,
+  useNetworkMismatch, ChainId } from "@thirdweb-dev/react";
 import React, { useState } from 'react';
 import { ethers } from 'ethers'
 
@@ -15,6 +16,10 @@ function Swapper(tokeninputs) {
 
   //function of smart contract
   const { mutateAsync: buy, isLoading } = useContractCall(contract, "buy");
+
+  // Hooks to ensure user is on the right network
+  const [, switchNetwork] = useNetwork();
+  const networkMismatch = useNetworkMismatch();
 
   const TokenB = parseInt(TokenBInput);
 
@@ -37,7 +42,18 @@ function Swapper(tokeninputs) {
 
     <div className="row ps-5 pe-5">
 
-      <button className="btn btn-light  btn-lg btn-block" disabled={isLoading} onClick={() => BuyUnits({ to: connectedWalletAddresss })} type="button">SWAP</button>
+      <button className="btn btn-light  btn-lg btn-block" disabled={isLoading} 
+      
+      
+      onClick={() => 
+        {
+          if (networkMismatch) {
+            switchNetwork(ChainId.Polygon);
+            return;
+          }
+          BuyUnits({  to: connectedWalletAddresss })}}type="button">SWAP</button> 
+   
+   
     </div>
   );
 }
