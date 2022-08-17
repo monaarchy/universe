@@ -63,17 +63,10 @@ Mega Bored Apes represent growth, strong community and wealth generation.
                                 <p className="lathe-special-text">Price</p>
                             </th>
                             <td>
-                                <b>$100 matic</b>
+                                <b>1000 megaFi Tokens</b>
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row">
-                                <p className="lathe-special-text">FEE</p>
-                            </th>
-                            <td>
-                                <b>1% megafi</b>
-                            </td>
-                        </tr>
+                        
                         <tr>
                             <th scope="row">
                                 <p className="lathe-special-text">ADDRESS</p>
@@ -150,17 +143,10 @@ Tech Mahindra, a US$5.2 billion company with over 145,000 employees, represents 
                                 <p className="lathe-special-text">Price</p>
                             </th>
                             <td>
-                                <b>$100 Matic</b>
+                                <b>1000 megaFi Tokens</b>
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row">
-                                <p className="lathe-special-text">FEE</p>
-                            </th>
-                            <td>
-                                <b>1% megafi</b>
-                            </td>
-                        </tr>
+                        
                         <tr>
                             <th scope="row">
                                 <p className="lathe-special-text">ADDRESS</p>
