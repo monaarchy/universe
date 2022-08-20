@@ -68,33 +68,38 @@ function Airdrop() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12  mb-5 p-5">
-                            <div className="row d-flex justify-content-between d-grid">
+                            <div className="row d-flex ">
                                 <div className="col-lg-6 p-4 mission-box mission-radius mission-border mx-auto">
-                                    <div className="row">
-                                        <div className="col">
-                                            <h1>Airdrop</h1>
-                                        </div>
-                                        <div className="col">
+                                    <div >
+                                    
+                                            <h1>Our Mega Airdrop</h1>
+                                
+
+                                        Please share your polygon address. We look forward for your portfolio to go mega!
+
                                             <h1 className="text-end">
                                         
                                             </h1>
-                                        </div>
+                                   
                                     </div>
 
                                     <form onSubmit={saveWallet}>
                                         {toggleInputBox && <div className="inputBox">
                                             <div className="row">
                                                 <div className="form-group mb-3 mx-1 mt-5">
+
+                                                    
                                                     <input
                                                         onChange={walletAddressChange}
-                                                        type="text"
+                                                        type="text" 
                                                         className="form-control transparent-input-border text-end"
-                                                        value={walletAddress}
+                                                     
+                                                        value={ walletAddress}
                                                     />
                                                 </div>
                                             </div>
 
-                                            <hr />
+                                        
                                             <div className="row ps-5 pe-5 mb-4">
                                                 <button className="btn btn-light  btn-lg btn-block" type="submit" disabled={btnDisabled}>Submit</button>
                                             </div>
@@ -103,7 +108,7 @@ function Airdrop() {
 
                                         {message && <div className={`message text-center mt-5 mb-5 ${messageColor}`}>{message}</div>}
 
-                                        <hr />
+                                      
 
                                         {
                                             tweetShow &&
