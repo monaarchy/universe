@@ -72,7 +72,7 @@ function Airdrop() {
                                 <div className="col-lg-6 p-4 mission-box mission-radius mission-border mx-auto">
                                     <div >
                                     
-                                            <h1>Our Mega Airdrop</h1>
+                                            <h1>The Mega Airdrop</h1>
                                 
 
                                         Please share your polygon address. We look forward for your portfolio to go mega!
