@@ -4,33 +4,30 @@ function UpcomingProjects() {
     const router = useRouter();
     return (
         <div className='row'>
-        <div className="col-lg-5 p-4 mission-box mission-radius mission-border mx-auto me-1" style={{ cursor: "pointer" }} onClick={() => router.push('/#')}>
+        <div className="col-lg-5 col-12 p-4 mt-4 mission-box mission-radius mission-border mx-auto me-md-1" style={{ cursor: "pointer" }} onClick={() => router.push('/#')}>
             <div className="row">
-                <h3 className="text-left">Upcoming NFT</h3>
+                <h3 className="text-center">Upcoming NFT</h3>
             </div>
             <hr />
-            <div className="row">
-                <div className="col-4">
+            <div className="row mt-4">
+                <div className="col-12 mt-2">
                     <img
-                        // src="/assets/images/Group 36697.png"
-                        // className="lathe-images-small"
+                        src="/assets/images/NFT-1.jpg"
+                        className="lathe-images-medium mx-auto d-block"
                     />
                 </div>
-                <div className="col">
+                <div className="col-12 ms-lg-2 mt-5">
                     <div className="row">
-                        <h4>
+                        <h4 className='text-center lh-base'>
                             <b>mBORED APES</b>
                         </h4>
                     </div>
-                    <div  className="row">
-                        <p className="lathe-special-text">NFT Image Coming Soon </p>
-                    </div>
                 </div>
             </div>
-            <div className="row mt-3">
+            <div className="row mt-5">
                 <p>
                 Mega Bored Apes synthetics NFTs grant you access to generate passive rewards through purchasing and staking synthetic tokens.
-Mega Bored Apes is the synthetic representation of the Bored ape yacht club NFT collection. Bored Ape Yacht Club NFTs are a collection of 10,000 cartoon apes with different attributes involving fur colour, facial expressions, and accessories.
+Mega Bored Apes is the synthetic representation of the Bored Ape Yacht club NFT collection. Bored Ape Yacht Club NFTs are a collection of 10,000 cartoon apes with different attributes involving fur colour, facial expressions, and accessories.
 Mega Bored Apes represent growth, strong community and wealth generation.
 
 
@@ -63,10 +60,17 @@ Mega Bored Apes represent growth, strong community and wealth generation.
                                 <p className="lathe-special-text">Price</p>
                             </th>
                             <td>
-                                <b>1,000 megaFi Tokens</b>
+                                <b>$100 matic</b>
                             </td>
                         </tr>
-                        
+                        <tr>
+                            <th scope="row">
+                                <p className="lathe-special-text">FEE</p>
+                            </th>
+                            <td>
+                                <b>1% megafi</b>
+                            </td>
+                        </tr>
                         <tr>
                             <th scope="row">
                                 <p className="lathe-special-text">ADDRESS</p>
@@ -87,30 +91,27 @@ Mega Bored Apes represent growth, strong community and wealth generation.
                 </table>
             </div>
         </div>
-        <div className="col-lg-5 p-4 mission-box mission-radius mission-border mx-auto" style={{ cursor: "pointer" }} onClick={() => router.push('#')}>
+        <div className="col-lg-5 p-4 mt-4 mission-box mission-radius mission-border mx-auto" style={{ cursor: "pointer" }} onClick={() => router.push('#')}>
             <div className="row">
-                <h3 className="text-left">Upcoming NFT</h3>
+                <h3 className="text-center">Upcoming NFT</h3>
             </div>
             <hr />
-            <div className="row">
-                <div className="col-4">
+            <div className="row mt-4">
+                <div className="col-12 mt-2">
                     <img
-                        // src="/assets/images/Group 36697.png"
-                        // className="lathe-images-small"
+                        src="/assets/images/NFT.jpg"
+                        className="lathe-images-medium mx-auto d-block"
                     />
                 </div>
-                <div className="col">
+                <div className="col-12 ms-2 mt-5">
                     <div className="row">
-                        <h4>
+                        <h4 className='text-center lh-base'>
                             <b> mTech Mahindra</b>
                         </h4>
                     </div>
-                    <div  className="row">
-                        <p className="lathe-special-text">NFT Image Coming Soon</p>
-                    </div>
                 </div>
             </div>
-            <div className="row mt-3">
+            <div className="row mt-5">
                 <p>
                 Mega-Tech Mahindra synthetic NFTs grant you access to generate passive rewards by purchasing and staking synthetic tokens.
 Mega-Tech Mahindra is the synthetic representation of the Indian Multinational information technology service and consulting cooperation.
@@ -143,10 +144,17 @@ Tech Mahindra, a US$5.2 billion company with over 145,000 employees, represents 
                                 <p className="lathe-special-text">Price</p>
                             </th>
                             <td>
-                                <b>1,000 megaFi Tokens</b>
+                                <b>$100 Matic</b>
                             </td>
                         </tr>
-                        
+                        <tr>
+                            <th scope="row">
+                                <p className="lathe-special-text">FEE</p>
+                            </th>
+                            <td>
+                                <b>1% megafi</b>
+                            </td>
+                        </tr>
                         <tr>
                             <th scope="row">
                                 <p className="lathe-special-text">ADDRESS</p>
