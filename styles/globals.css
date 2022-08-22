@@ -72,6 +72,13 @@ hr {
   height: auto;
 }
 
+.lathe-images-medium {
+  width: 320px;
+  height: 405px;
+}
+
+
+
 .lathe-special-text {
   color: #FBFBFBB2;
 }
@@ -286,4 +293,14 @@ h5 {
   .loader {
     display: none;
   }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .lathe-images-medium {
+    width: 290px;
+    height: 338px;
+  }
+
 }

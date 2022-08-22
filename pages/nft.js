@@ -13,10 +13,8 @@ function NFT() {
             <div className="container-fluid ">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-12  mb-5 p-5">
-                            <div className="row d-flex justify-content-between d-grid">
-                                <UpcomingProjects />
-                            </div>
+                        <div className="col-lg-12 mb-5 p-4 pt-4 mx-auto">
+                          <UpcomingProjects />
                         </div>
                     </div>
                 </div>
