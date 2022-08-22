@@ -75,7 +75,7 @@ function Airdrop() {
                                             <h1>The Mega Airdrop</h1>
                                 
 
-                                        Please share your polygon address. We look forward for your portfolio to go mega!
+                                       Welcome to the mega universe! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go mega!
 
                                             <h1 className="text-end">
                                         
