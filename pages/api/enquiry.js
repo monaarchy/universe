@@ -8,7 +8,7 @@ const handler = async (req, res) => {
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
                 },
-                body: `secret=6LeGnLYhAAAAAO3-lE-steuZdCo6hV9aBnW9fDM7&response=${req.body.gRecaptchaToken}`,
+                body: `secret=6LdwpLUhAAAAAHCU1s8ETTIrE__Vz1yB1PegElSd&response=${req.body.gRecaptchaToken}`,
             });
             let reCaptchaRes = await reCaptchaResponse.json();
             if (reCaptchaRes?.score > 0.5) {

@@ -104,9 +104,14 @@ function Airdrop() {
                             <div className="row d-flex justify-content-between d-grid">
                                 <div className="col-lg-6 p-4 mission-box mission-radius mission-border mx-auto">
                                     <div className="row">
-                                        <div className="col">
-                                            <h1>Airdrop</h1>
-                                        </div>
+                                    <div >                                
+                                            <h1>The Mega Airdrop</h1>
+                                       Welcome to the mega universe! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go mega!
+                                        <h1 className="text-end">
+                                        
+                                            </h1>
+                                   
+                                    </div>
                                         <div className="col">
                                             <h1 className="text-end">
                                         
