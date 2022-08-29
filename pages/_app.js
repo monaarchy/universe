@@ -13,8 +13,7 @@ function getLibrary(provider) {
 function MyApp({ Component, pageProps }) {
 
 
-  return 
-    <ThirdwebProvider desiredChainId={ChainId.Polygon}>
+  return  <ThirdwebProvider desiredChainId={ChainId.Polygon}>
       <GoogleReCaptchaProvider
         reCaptchaKey="6LdwpLUhAAAAANVzyyWpQrsU_DGZZc5t68TUDuEs"
         scriptProps={{
