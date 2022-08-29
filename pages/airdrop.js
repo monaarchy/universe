@@ -1,13 +1,13 @@
 import Navbar from '../components/navbar'
 import Footer from '../components/footer';
 import { useRouter } from 'next/router'
-import { useState, useCallback } from 'react';
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import { useState } from 'react';
 
 
 function Airdrop() {
     const router = useRouter();
 
+    const [baseUrl, setBaseUrl] = useState("https://yonetwork.org");
     const [walletAddress, setWalletAddress] = useState("");
     const [btnDisabled, setBtnDisabled] = useState(true);
     const [message, setMessage] = useState("");
@@ -16,8 +16,6 @@ function Airdrop() {
     const [tweetShow, setTweetShow] = useState(false);
     const [isAddressLength, setIsAddressLength] = useState(false);
     const [toggleInputBox, setToggleInputBox] = useState(true);
-
-    const { executeRecaptcha } = useGoogleReCaptcha();
 
 
     const walletAddressChange = (e) => {
@@ -41,55 +39,24 @@ function Airdrop() {
     }
 
 
-    const handleSubmitForm = useCallback(
-        (e) => {
-          e.preventDefault();
-          if (!executeRecaptcha) {
-            setMessage("reCAPTCHA Error");
+    const saveWallet = async () => {
+        event.preventDefault();
+        const response = await fetch(baseUrl + '/wallet.php?address=' + walletAddress)
+        const data = await response.json();
+        const dataStatus = data[0].status;
+        if (dataStatus === 2) {
+            setMessage("Duplicate Wallet Address in the database");
             setMessageColor("text-danger");
-            return;
-          }
-          executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-            submitEnquiryForm(gReCaptchaToken);
-          });
-        },
-        [executeRecaptcha]
-      );
-      
-      const submitEnquiryForm = (gReCaptchaToken) => {
-        fetch("/api/enquiry", {
-          method: "POST",
-          headers: {
-            Accept: "application/json, text/plain, */*",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            walletaddress: walletAddress,
-            gRecaptchaToken: gReCaptchaToken,
-          }),
-        })
-          .then((res) => res.json())
-          .then((res) => {
-            console.log(res, "response from backend");
-            if (res?.status === "success") {
-                if (res?.walletstatus === 2) {
-                    setMessage("Duplicate Wallet Address in the database");
-                    setMessageColor("text-danger");
-                } else if (res?.walletstatus === 1) {
-                    setMessage("We have received your wallet address. Thank you!");
-                    setMessageColor("text-success");
-                    setTweetShow(true);
-                    setToggleInputBox(false);
-                } else {
-                    setMessage("Please try again");
-                    setMessageColor("text-danger");
-                }
-            } else {
-              setMessage(res?.message);
-              setMessageColor("text-danger");
-            }
-          });
-      };
+        } else if (dataStatus === 1) {
+            setMessage("We have received your wallet address. Thank you!");
+            setMessageColor("text-success");
+            setTweetShow(true);
+            setToggleInputBox(false);
+        } else {
+            setMessage("Please try again");
+            setMessageColor("text-danger");
+        }
+    }
 
 
 
@@ -104,22 +71,18 @@ function Airdrop() {
                             <div className="row d-flex justify-content-between d-grid">
                                 <div className="col-lg-6 p-4 mission-box mission-radius mission-border mx-auto">
                                     <div className="row">
-                                    <div >                                
-                                            <h1>The Mega Airdrop</h1>
+                                        
+                                      
+                                              <h1>The Mega Airdrop</h1>
                                        Welcome to the mega universe! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go mega!
                                         <h1 className="text-end">
                                         
                                             </h1>
-                                   
-                                    </div>
-                                        <div className="col">
-                                            <h1 className="text-end">
-                                        
-                                            </h1>
-                                        </div>
-                                    </div>
+                                            </div>
+                                 
+                                    
 
-                                    <form onSubmit={handleSubmitForm}>
+                                    <form onSubmit={saveWallet}>
                                         {toggleInputBox && <div className="inputBox">
                                             <div className="row">
                                                 <div className="form-group mb-3 mx-1 mt-5">
