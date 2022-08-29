@@ -1,13 +1,13 @@
 import Navbar from '../components/navbar'
 import Footer from '../components/footer';
 import { useRouter } from 'next/router'
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 
 function Airdrop() {
     const router = useRouter();
 
-    const [baseUrl, setBaseUrl] = useState("https://yonetwork.org");
     const [walletAddress, setWalletAddress] = useState("");
     const [btnDisabled, setBtnDisabled] = useState(true);
     const [message, setMessage] = useState("");
@@ -16,6 +16,8 @@ function Airdrop() {
     const [tweetShow, setTweetShow] = useState(false);
     const [isAddressLength, setIsAddressLength] = useState(false);
     const [toggleInputBox, setToggleInputBox] = useState(true);
+
+    const { executeRecaptcha } = useGoogleReCaptcha();
 
 
     const walletAddressChange = (e) => {
@@ -39,24 +41,55 @@ function Airdrop() {
     }
 
 
-    const saveWallet = async () => {
-        event.preventDefault();
-        const response = await fetch(baseUrl + '/wallet.php?address=' + walletAddress)
-        const data = await response.json();
-        const dataStatus = data[0].status;
-        if (dataStatus === 2) {
-            setMessage("Duplicate Wallet Address in the database");
+    const handleSubmitForm = useCallback(
+        (e) => {
+          e.preventDefault();
+          if (!executeRecaptcha) {
+            setMessage("reCAPTCHA Error");
             setMessageColor("text-danger");
-        } else if (dataStatus === 1) {
-            setMessage("We have received your wallet address. Thank you!");
-            setMessageColor("text-success");
-            setTweetShow(true);
-            setToggleInputBox(false);
-        } else {
-            setMessage("Please try again");
-            setMessageColor("text-danger");
-        }
-    }
+            return;
+          }
+          executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+            submitEnquiryForm(gReCaptchaToken);
+          });
+        },
+        [executeRecaptcha]
+      );
+      
+      const submitEnquiryForm = (gReCaptchaToken) => {
+        fetch("/api/enquiry", {
+          method: "POST",
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            walletaddress: walletAddress,
+            gRecaptchaToken: gReCaptchaToken,
+          }),
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            console.log(res, "response from backend");
+            if (res?.status === "success") {
+                if (res?.walletstatus === 2) {
+                    setMessage("Duplicate Wallet Address in the database");
+                    setMessageColor("text-danger");
+                } else if (res?.walletstatus === 1) {
+                    setMessage("We have received your wallet address. Thank you!");
+                    setMessageColor("text-success");
+                    setTweetShow(true);
+                    setToggleInputBox(false);
+                } else {
+                    setMessage("Please try again");
+                    setMessageColor("text-danger");
+                }
+            } else {
+              setMessage(res?.message);
+              setMessageColor("text-danger");
+            }
+          });
+      };
 
 
 
@@ -68,38 +101,33 @@ function Airdrop() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12  mb-5 p-5">
-                            <div className="row d-flex ">
+                            <div className="row d-flex justify-content-between d-grid">
                                 <div className="col-lg-6 p-4 mission-box mission-radius mission-border mx-auto">
-                                    <div >
-                                    
-                                            <h1>The Mega Airdrop</h1>
-                                
-
-                                        Please share your polygon address. We look forward for your portfolio to go mega!
-
+                                    <div className="row">
+                                        <div className="col">
+                                            <h1>Airdrop</h1>
+                                        </div>
+                                        <div className="col">
                                             <h1 className="text-end">
                                         
                                             </h1>
-                                   
+                                        </div>
                                     </div>
 
-                                    <form onSubmit={saveWallet}>
+                                    <form onSubmit={handleSubmitForm}>
                                         {toggleInputBox && <div className="inputBox">
                                             <div className="row">
                                                 <div className="form-group mb-3 mx-1 mt-5">
-
-                                                    
                                                     <input
                                                         onChange={walletAddressChange}
-                                                        type="text" 
+                                                        type="text"
                                                         className="form-control transparent-input-border text-end"
-                                                     
-                                                        value={ walletAddress}
+                                                        value={walletAddress}
                                                     />
                                                 </div>
                                             </div>
 
-                                        
+                                            <hr />
                                             <div className="row ps-5 pe-5 mb-4">
                                                 <button className="btn btn-light  btn-lg btn-block" type="submit" disabled={btnDisabled}>Submit</button>
                                             </div>
@@ -108,7 +136,7 @@ function Airdrop() {
 
                                         {message && <div className={`message text-center mt-5 mb-5 ${messageColor}`}>{message}</div>}
 
-                                      
+                                        <hr />
 
                                         {
                                             tweetShow &&
