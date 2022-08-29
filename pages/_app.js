@@ -13,7 +13,7 @@ function getLibrary(provider) {
 function MyApp({ Component, pageProps }) {
 
 
-  return <Web3ReactProvider getLibrary={getLibrary}>
+  return 
     <ThirdwebProvider desiredChainId={ChainId.Polygon}>
       <GoogleReCaptchaProvider
         reCaptchaKey="6LdwpLUhAAAAANVzyyWpQrsU_DGZZc5t68TUDuEs"
@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }) {
       </GoogleReCaptchaProvider>
 
     </ThirdwebProvider>
-  </Web3ReactProvider >
 
 
 
