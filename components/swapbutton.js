@@ -27,7 +27,7 @@ function Swapper(tokeninputs) {
   const BuyUnits = async () => {
 
     try {
-      await contract.call("buy", 5, ethers.utils.parseEther(TokenBInput.toString()), { gasLimit: 3000000, value: ethers.utils.parseEther(TokenAInput.toString()) });
+      await contract.call("buy", 6, ethers.utils.parseEther(TokenBInput.toString()), { gasLimit: 3000000, value: ethers.utils.parseEther(TokenAInput.toString()) });
     }
     catch (ex) {
       console.log(ex)
