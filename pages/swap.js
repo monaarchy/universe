@@ -52,13 +52,6 @@ function Swap() {
                                         <div className="col">
                                             <h1>Swap</h1>
                                         </div>
-                                        <div className="col">
-                                            <h1 className="text-end">
-                                                <a href="https://megafiprotocol.github.io/docs/pages/design/TokenomicsandGovernance/">
-                                                    <i className="fas fa-cog" />
-                                                </a>
-                                            </h1>
-                                        </div>
                                     </div>
                                     <div className="row mt-5">
                                         <p className="lathe-special-text"> From</p>
