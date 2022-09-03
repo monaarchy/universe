@@ -1,13 +1,13 @@
 import Navbar from '../components/navbar'
 import Footer from '../components/footer';
 import { useRouter } from 'next/router'
-import { useState, useCallback } from 'react';
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import { useState } from 'react';
 
 
 function Airdrop() {
     const router = useRouter();
 
+    const [baseUrl, setBaseUrl] = useState("https://yonetwork.org");
     const [walletAddress, setWalletAddress] = useState("");
     const [btnDisabled, setBtnDisabled] = useState(true);
     const [message, setMessage] = useState("");
@@ -17,25 +17,21 @@ function Airdrop() {
     const [isAddressLength, setIsAddressLength] = useState(false);
     const [toggleInputBox, setToggleInputBox] = useState(true);
 
-    const { executeRecaptcha } = useGoogleReCaptcha();
 
+    const walletAddressChange = (e) => {
+        if (e.target.value.trim().length <= 15) {
+            setBtnDisabled(true);
+            setMessage("Address should not be less than 15 chracters");
+            setIsAddressLength(false);
+            setMessageColor("text-danger");
+        } else {
+            setIsAddressLength(true);
+            setMessage(null);
+            setBtnDisabled(false);
+        }
 
-    const walletAddressChange = useCallback(
-        (e) => {
-            if (e.target.value.trim().length <= 15) {
-                setBtnDisabled(true);
-                setMessage("Address should not be less than 15 chracters");
-                setIsAddressLength(false);
-                setMessageColor("text-danger");
-            } else {
-                setIsAddressLength(true);
-                setMessage(null);
-                setBtnDisabled(false);
-            }
-            setWalletAddress(e.target.value);
-        },
-        [walletAddress]
-    );
+        setWalletAddress(e.target.value);
+    }
 
     const confirmTweet = () => {
         event.preventDefault();
@@ -43,51 +39,24 @@ function Airdrop() {
     }
 
 
-    const handleSubmitForm = (e) => {
-        e.preventDefault();
-        if (!executeRecaptcha) {
-            setMessage("reCAPTCHA Error");
+    const saveWallet = async () => {
+        event.preventDefault();
+        const response = await fetch(baseUrl + '/wallet.php?address=' + walletAddress)
+        const data = await response.json();
+        const dataStatus = data[0].status;
+        if (dataStatus === 2) {
+            setMessage("Duplicate Wallet Address in the database");
             setMessageColor("text-danger");
-            return;
+        } else if (dataStatus === 1) {
+            setMessage("We have received your wallet address. Thank you!");
+            setMessageColor("text-success");
+            setTweetShow(true);
+            setToggleInputBox(false);
+        } else {
+            setMessage("Please try again");
+            setMessageColor("text-danger");
         }
-        executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-            submitEnquiryForm(gReCaptchaToken);
-        });
     }
-
-    const submitEnquiryForm = (gReCaptchaToken) => {
-        fetch("/api/enquiry", {
-            method: "POST",
-            headers: {
-                Accept: "application/json, text/plain, */*",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                walletAddressData: walletAddress,
-                gRecaptchaToken: gReCaptchaToken,
-            }),
-        })
-            .then((res) => res.json())
-            .then((res) => {
-                if (res?.status === "success") {
-                    if (res?.walletstatus === 2) {
-                        setMessage("Duplicate Wallet Address in the database");
-                        setMessageColor("text-danger");
-                    } else if (res?.walletstatus === 1) {
-                        setMessage("We have received your wallet address. Thank you!");
-                        setMessageColor("text-success");
-                        setTweetShow(true);
-                        setToggleInputBox(false);
-                    } else {
-                        setMessage("Please try again");
-                        setMessageColor("text-danger");
-                    }
-                } else {
-                    setMessage(res?.message);
-                    setMessageColor("text-danger");
-                }
-            });
-    };
 
 
 
@@ -99,21 +68,21 @@ function Airdrop() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12  mb-5 p-5">
-                            <div className="row d-flex ">
+                            <div className="row d-flex justify-content-between d-grid">
                                 <div className="col-lg-6 p-4 mission-box mission-radius mission-border mx-auto">
-                                    <div >
-
-                                        <h1>The Mega Airdrop</h1>
-
-
-                                        Welcome to the mega universe! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go mega!
-
+                                    <div className="row">
+                                        
+                                      
+                                              <h1>The Mega Airdrop</h1>
+                                       Welcome to the mega universe! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go mega!
                                         <h1 className="text-end">
+                                        
+                                            </h1>
+                                            </div>
+                                 
+                                    
 
-                                        </h1>
-
-                                    </div>
-                                    <form onSubmit={handleSubmitForm}>
+                                    <form onSubmit={saveWallet}>
                                         {toggleInputBox && <div className="inputBox">
                                             <div className="row">
                                                 <div className="form-group mb-3 mx-1 mt-5">
@@ -122,7 +91,6 @@ function Airdrop() {
                                                         type="text"
                                                         className="form-control transparent-input-border text-end"
                                                         value={walletAddress}
-                                                        placeholder="Add Your Polygon Address"
                                                     />
                                                 </div>
                                             </div>
@@ -149,7 +117,7 @@ function Airdrop() {
                                                     <a className="twitter-button"
                                                         onClick={confirmTweet}
                                                         href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20%23megafiairdrop.%20The%20internet%20of%20NFTs%20at%20%40megafiprotocol."
-                                                        data-text="I just joined the #megafiairdrop. The internet of NFTs at @megafiprotocol."
+                                                        data-text="I just joined the #megafiairdrop. The internet of NFTs at @megafiprotocol. #crypto #NFT #web3 #metaverse $megaFi"
                                                         data-url=""
                                                         data-size="large"
                                                         data-related="airdrops,nfts"
