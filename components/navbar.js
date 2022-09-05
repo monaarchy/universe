@@ -56,6 +56,13 @@ function Navbar(navprops) {
                     </Link>
                   </li>
                   <li className="nav-item">
+                    <Link href="/swap">
+                      <a className="nav-link" target="_blank" rel="noopener noreferrer">
+                        Swap
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
                     <Link href="/airdrop">
                       <a className="nav-link">
                         Airdrop
