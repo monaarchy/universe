@@ -57,11 +57,8 @@ export default function Home() {
                   Our Mission To Empower Investors And Creators To Transact In A
                   Trustless Environment.
                 </p>
-                <div className="col-lg-12 mb-5">
-                  <button type="button" className="btn btn-light btn-block airdrop">
-                    Begin your journey
-                  </button>
-                </div>
+                
+             
               </div>
             </div>
             <div className="col-lg-7 ms-auto">
@@ -119,9 +116,7 @@ export default function Home() {
                 <br />
               </p>
               <div className="col-lg-6 mb-5">
-                <button type="button" className="btn btn-dark">
-                  Begin your journey
-                </button>
+               
               </div>
             </div>
             <div className="col-lg-4 ms-auto">
