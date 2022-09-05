@@ -74,13 +74,13 @@ function Navbar(navprops) {
                       className="nav-link"
                       href="https://megafiprotocol.github.io/docs/" target="_blank" rel="noopener noreferrer"
                     >
-                      Docs
+                      Protocol Docs
                     </a>
                   </li>
                   <li className="nav-item">
                     <Link href="/nft">
                       <a className="nav-link">
-                        NFT Drops
+                        NFTs
                       </a>
                     </Link>
                   </li>
