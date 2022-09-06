@@ -18,9 +18,9 @@ function MyApp({ Component, pageProps }) {
 
 
   return <>
-    <Script strategy="lazyOnload" id="gtm-script" src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+    <Script strategy="lazyOnload" id="gtm-script-1" src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
 
-    <Script strategy="lazyOnload" id="gtm-script">
+    <Script strategy="lazyOnload" id="gtm-script-2">
       {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
