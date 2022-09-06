@@ -1,7 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.css'
-import '../styles/globals.css'
-import { Web3ReactProvider } from '@web3-react/core'
-import Web3 from 'web3'
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/globals.css';
+import { Web3ReactProvider } from '@web3-react/core';
+import Web3 from 'web3';
 import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import React, { useEffect } from 'react';
