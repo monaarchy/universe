@@ -10,7 +10,7 @@ function Navbar(navprops) {
   return (
     <div className="container-fluid">
       <div className="container">
-        <div className="row pt-2">
+        <div className="row">
           <nav className="navbar navbar-expand-lg nav-bg">
             <div className="container-fluid">
               <Link href="/swap">
@@ -55,9 +55,9 @@ function Navbar(navprops) {
                       </a>
                     </Link>
                   </li>
-                  <li className={dashboardstatus ? "hide" : "nav-item"}>
+                  <li className="nav-item">
                     <Link href="/swap">
-                      <a className="nav-link">
+                      <a className="nav-link" target="_blank" rel="noopener noreferrer">
                         Swap
                       </a>
                     </Link>
@@ -85,7 +85,7 @@ function Navbar(navprops) {
                     </Link>
                   </li>
                   <li className={dashboardstatus ? "nav-item" : "hide"}>
-                    <div className="row ps-lg-5 pe-lg-5 mt-3 mt-lg-1">
+                    <div className="row ps-5 pe-5">
                       <Link href="/swap">
                         <button className="btn btn-light  btn-lg btn-block" type="button">Dashboard</button>
                       </Link>
