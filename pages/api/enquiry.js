@@ -1,6 +1,6 @@
 const handler = async (req, res) => {
     const baseUrl = "megafi.org";
-    const secretKey = "6LdwpLUhAAAAANVzyyWpQrsU_DGZZc5t68TUDuEs"
+    const secretKey = "6LdwpLUhAAAAAHCU1s8ETTIrE__Vz1yB1PegElSd"
 
     if (req.method === "POST") {
         try {
