@@ -56,6 +56,7 @@ function Airdrop() {
     }
 
     const submitEnquiryForm = (gReCaptchaToken) => {
+        console.log(walletAddress);
         fetch("/api/enquiry", {
             method: "POST",
             headers: {
@@ -103,20 +104,19 @@ function Airdrop() {
                                 <div className="col-lg-6 p-4 mission-box mission-radius mission-border mx-auto">
                                     <div >
 
-                                        <h1>The Mega Airdrop</h1>
+                                        <h1 className="text-center"> $megaFi Airdrop</h1>
 
 
-                                        Welcome to the mega universe! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go mega!
 
-                                        <h1 className="text-end">
+                                        <h6 className="text-center m-4">Welcome Galactic megaFian Hustlers! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go $megaFi!
 
-                                        </h1>
+                                        </h6>
 
                                     </div>
                                     <form onSubmit={handleSubmitForm}>
                                         {toggleInputBox && <div className="inputBox">
                                             <div className="row">
-                                                <div className="form-group mb-3 mx-1 mt-5">
+                                                <div className=" text-center form-group  mx-1 mt-3">
                                                     <input
                                                         onChange={walletAddressChange}
                                                         type="text"
@@ -127,29 +127,29 @@ function Airdrop() {
                                                 </div>
                                             </div>
 
-                                            <hr />
+                                            
                                             <div className="row ps-5 pe-5 mb-4">
-                                                <button className="btn btn-light  btn-lg btn-block" type="submit" disabled={btnDisabled}>Submit</button>
+                                                <button className="btn btn-light  btn-lg btn-block mt-5" type="submit" disabled={btnDisabled}>Submit</button>
                                             </div>
                                         </div>
                                         }
 
                                         {message && <div className={`message text-center mt-5 mb-5 ${messageColor}`}>{message}</div>}
 
-                                        <hr />
+                                       
 
                                         {
                                             tweetShow &&
 
                                             <div className='mt-5 me-3 row'>
                                                 <div className='col-10'>
-                                                    <p className="lead">Share this Airdrop</p>
+                                                    <p className="lead">Share The Hustlers Airdrop</p>
                                                 </div>
                                                 <div className="col-2">
                                                     <a className="twitter-button"
                                                         onClick={confirmTweet}
-                                                        href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20%23megafiairdrop.%20The%20internet%20of%20NFTs%20at%20%40megafiprotocol."
-                                                        data-text="I just joined the #megafiairdrop. The internet of NFTs at @megafiprotocol."
+                                                        href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20%23megafiairdrop.%20The%20internet%20of%20#NFTs%20at%20%40megafiprotocol."
+                                                        data-text="I just joined the #megafiairdrop. The internet of #NFTs at @megafiprotocol."
                                                         data-url=""
                                                         data-size="large"
                                                         data-related="airdrops,nfts"
