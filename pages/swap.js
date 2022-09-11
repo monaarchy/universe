@@ -50,7 +50,10 @@ function Swap() {
                                 <div className="col-lg-6 p-4 mission-box mission-radius mission-border mx-auto">
                                     <div className="row">
                                         <div className="col">
-                                            <h1>Swap</h1>
+                                        <h1 className="text-center mb-4" >Swap</h1>
+                                            <h4 className="text-center"><b>Presale:</b> 0.1 MATIC = 1 megaFi</h4>
+<h5 className="text-center">10 million megaFi tokens on sale</h5>
+<h4 className="text-center"><b>Polygonscan:</b> <a href="https://polygonscan.com/token/0xfa69451188684045af69155f129d73e674e36c10" target="_BLANK" rel="noreferrer">megaFi</a></h4>
                                         </div>
                                     </div>
                                     <div className="row mt-5">
