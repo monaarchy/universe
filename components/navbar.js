@@ -48,6 +48,14 @@ function Navbar(navprops) {
                       <a className="nav-link">About Us</a>
                     </Link>
                   </li>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      href="/giveaway"
+                    >
+                      <a className="nav-link">Giveaway</a>
+                    </Link>
+                  </li>
                   <li className="nav-item">
                     <Link href="https://discord.gg/XxPB4mfG">
                       <a className="nav-link" target="_blank" rel="noopener noreferrer">
