@@ -149,7 +149,7 @@ function Airdrop() {
                                                     <a className="twitter-button"
                                                         onClick={confirmTweet}
                                                         href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20%23megafiairdrop.%20The%20internet%20of%20#NFTs%20at%20%40megafiprotocol."
-                                                        data-text="I just joined the #megafiairdrop. The internet of #NFTs at @megafiprotocol."
+                                                        data-text="I just joined the #megafiairdrop. The internet of NFTs at @megafiprotocol."
                                                         data-url=""
                                                         data-size="large"
                                                         data-related="airdrops,nfts"
