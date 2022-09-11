@@ -47,7 +47,7 @@ function Navbar(navprops) {
                     >
                       <a className="nav-link">About Us</a>
                     </Link>
-                  </li>
+                
                   </li>
                   <li className="nav-item">
                     <Link
