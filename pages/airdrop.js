@@ -143,7 +143,7 @@ function Airdrop() {
 
                                             <div className='mt-5 me-3 row'>
                                                 <div className='col-10'>
-                                                    <p className="lead">Share The Hustlers Airdrop</p>
+                                                    <p className="lead">Share The Galactic Hustlers Airdrop</p>
                                                 </div>
                                                 <div className="col-2">
                                                     <a className="twitter-button"
