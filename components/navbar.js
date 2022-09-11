@@ -55,13 +55,7 @@ function Navbar(navprops) {
                       </a>
                     </Link>
                   </li>
-                  <li className={dashboardstatus ? "hide" : "nav-item"}>
-                    <Link href="/swap">
-                      <a className="nav-link">
-                        Swap
-                      </a>
-                    </Link>
-                  </li>
+                  
                   <li className="nav-item">
                     <Link href="/airdrop">
                       <a className="nav-link">
@@ -81,6 +75,13 @@ function Navbar(navprops) {
                     <Link href="/nft">
                       <a className="nav-link">
                         NFTs
+                      </a>
+                    </Link>
+                  </li>
+                  <li className={dashboardstatus ? "hide" : "nav-item"}>
+                    <Link href="/swap">
+                      <a className="nav-link">
+                        Buy $megaFi
                       </a>
                     </Link>
                   </li>
