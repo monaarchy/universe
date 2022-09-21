@@ -57,7 +57,7 @@ function Navbar(navprops) {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="https://discord.gg/XxPB4mfG">
+                    <Link href="https://discord.gg/JNMf6G2Xdf">
                       <a className="nav-link" target="_blank" rel="noopener noreferrer">
                         Discord
                       </a>
