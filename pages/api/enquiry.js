@@ -13,7 +13,7 @@ const handler = async (req, res) => {
             });
             let reCaptchaRes = await reCaptchaResponse.json();
             if (reCaptchaRes?.score > 0.5) {
-                const response = await fetch(baseUrl + '/wallet.php?address=' + req.body.walletAddressData);
+                const response = await fetch(baseUrl + '/save_airdrop_wallet.php?address=' + req.body.walletAddressData);
                 const walletStatusResponse = await response.json();
                 res.status(200).json({
                     status: "success",

@@ -1,6 +1,6 @@
 const handler = async (req, res) => {
-    const baseUrl = "https://yonetwork.org";
-    const secretKey = "6LdwpLUhAAAAAHCU1s8ETTIrE__Vz1yB1PegElSd"
+    const baseUrl = "https://yonetwork.org/api";
+    const secretKey = "6LeGnLYhAAAAAO3-lE-steuZdCo6hV9aBnW9fDM7"
 
     if (req.method === "POST") {
         try {
@@ -13,13 +13,14 @@ const handler = async (req, res) => {
             });
             let reCaptchaRes = await reCaptchaResponse.json();
             if (reCaptchaRes?.score > 0.5) {
-                const response = await fetch(baseUrl + '/save_giveaway_wallet.php?address=' + req.body.walletAddressData);
+                const response = await fetch(baseUrl + '/get_giveaway_winner.php?address=' + req.body.walletAddressData);
                
                 const walletStatusResponse = await response.json();
                 res.status(200).json({
                     status: "success",
                     walletstatusdata: walletStatusResponse,
                     walletstatus: walletStatusResponse[0].status,
+                    walletstatusmessage: walletStatusResponse[0].msg,
                     message: "Enquiry submitted successfully",
                 });
             } else {
