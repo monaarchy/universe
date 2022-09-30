@@ -102,6 +102,9 @@ function Giveaway() {
     const submitEnquiryForm = (gReCaptchaToken) => {
         setLoader(true);
         setBtnDisabled(true);
+        console.log(walletAddress);
+        console.log(gReCaptchaToken);
+        
         fetch("/api/enquirytwo", {
             method: "POST",
             headers: {
