@@ -3,6 +3,8 @@ import Footer from '../components/footer';
 import { useRouter } from 'next/router'
 import { useState, useCallback } from 'react';
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import recaptcha from '../data/recaptcha';
+import baseUrl from '../data/url';
 
 
 function Airdrop() {
@@ -16,6 +18,7 @@ function Airdrop() {
     const [tweetShow, setTweetShow] = useState(false);
     const [isAddressLength, setIsAddressLength] = useState(false);
     const [toggleInputBox, setToggleInputBox] = useState(true);
+    const [loader, setLoader] = useState(false);
 
     const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -56,6 +59,8 @@ function Airdrop() {
     }
 
     const submitEnquiryForm = (gReCaptchaToken) => {
+        setLoader(true);
+        setBtnDisabled(true);
         fetch("/api/enquiry", {
             method: "POST",
             headers: {
@@ -64,11 +69,13 @@ function Airdrop() {
             },
             body: JSON.stringify({
                 walletAddressData: walletAddress,
-                gRecaptchaToken: gReCaptchaToken,
+                gRecaptchaToken: gReCaptchaToken
             }),
         })
             .then((res) => res.json())
             .then((res) => {
+                setLoader(false);
+                setBtnDisabled(false);
                 if (res?.status === "success") {
                     if (res?.walletstatus === 2) {
                         setMessage("Duplicate Wallet Address in the database");
@@ -122,16 +129,27 @@ function Airdrop() {
                                                 </div>
                                             </div>
 
-                                            
+
                                             <div className="row px-3 mb-4 mt-3">
-                                                <button className="btn btn-light  btn-lg btn-block" type="submit" disabled={btnDisabled}>Submit</button>
+                                                {!loader &&
+                                                    <button className="btn btn-light  btn-lg btn-block" type="submit" disabled={btnDisabled}>
+                                                        Submit
+                                                    </button>
+                                                }
+                                                {loader &&
+                                                    <button className="btn btn-light  btn-lg btn-block" type="submit" disabled={btnDisabled}>
+                                                        <div className="spinner-border text-dark" role="status">
+                                                            <span className="visually-hidden">Loading...</span>
+                                                        </div>
+                                                    </button>
+                                                }
                                             </div>
                                         </div>
                                         }
 
                                         {message && <div className={`message text-center mt-5 mb-5 ${messageColor}`}>{message}</div>}
 
-                                       
+
 
                                         {
                                             tweetShow &&

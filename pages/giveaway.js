@@ -110,7 +110,7 @@ function Giveaway() {
             },
             body: JSON.stringify({
                 walletAddressData: walletAddress,
-                gRecaptchaToken: gReCaptchaToken,
+                gRecaptchaToken: gReCaptchaToken
             }),
         })
             .then((res) => res.json())
@@ -148,7 +148,7 @@ function Giveaway() {
             },
             body: JSON.stringify({
                 walletAddressData: walletAddressCheck,
-                gRecaptchaToken: gReCaptchaToken,
+                gRecaptchaToken: gReCaptchaToken
             }),
         })
             .then((res) => res.json())
