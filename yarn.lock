@@ -10131,7 +10131,7 @@ update-notifier@^5.1.0:
 
 update@^0.7.4:
   version "0.7.4"
-  resolved "https://registry.npmjs.org/update/-/update-0.7.4.tgz"
+  resolved "https://registry.yarnpkg.com/update/-/update-0.7.4.tgz#b1a091c11a3e28ae31ba2eef58b711b82ce98b14"
   integrity sha512-B7HArWh4T6TSmMffmxlbD9gZM0QdboQ8N/p5aHcyhGCuuVRHSk37pvuQlAvi1XBrQMrEX5WJUQyQR8+jy/x4iQ==
   dependencies:
     arr-union "^3.1.0"
