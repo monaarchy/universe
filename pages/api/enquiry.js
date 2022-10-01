@@ -1,5 +1,5 @@
 const handler = async (req, res) => {
-    const baseUrl = "https://yonetwork.org";
+    const baseUrl = "https://yonetwork.org/api";
     const secretKey = "6LdwpLUhAAAAAHCU1s8ETTIrE__Vz1yB1PegElSd"
 
     if (req.method === "POST") {
