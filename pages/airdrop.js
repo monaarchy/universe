@@ -56,7 +56,6 @@ function Airdrop() {
     }
 
     const submitEnquiryForm = (gReCaptchaToken) => {
-        console.log(walletAddress);
         fetch("/api/enquiry", {
             method: "POST",
             headers: {
