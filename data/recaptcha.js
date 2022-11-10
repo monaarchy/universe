@@ -1,3 +1,3 @@
-const recaptcha = ["6LdwpLUhAAAAAHCU1s8ETTIrE__Vz1yB1PegElSd"]
+const recaptcha = ["6Ld1D_kiAAAAABCM41n7tiqYc1bN6I74kjSamM2Z"]
 
 export default recaptcha;

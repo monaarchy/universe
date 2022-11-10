@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
     <Web3ReactProvider getLibrary={getLibrary}>
       <ThirdwebProvider desiredChainId={ChainId.Polygon}>
         <GoogleReCaptchaProvider
-          reCaptchaKey="6LdwpLUhAAAAANVzyyWpQrsU_DGZZc5t68TUDuEs"
+          reCaptchaKey="6Ld1D_kiAAAAAFlTYRLaEBsBDS9LRtyaEariKIV2"
           scriptProps={{
             async: false,
             defer: false,
