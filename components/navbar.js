@@ -15,7 +15,7 @@ function Navbar(navprops) {
             <div className="container-fluid">
               <Link href="/swap">
                 <a className="navbar-brand">
-                  <img src="/assets/images/header-logo-mega-fi.png" alt="mega-fi" />
+                 <img src="/assets/images/crown2.png" alt="monaarchy"  width="60" height="60" />
                 </a>
               </Link>
               <button

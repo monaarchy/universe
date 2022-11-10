@@ -8,9 +8,11 @@ function Footer() {
                 <div className="row p-5 ">
                     <div className="col-lg-4 mb-4">
                         <img
-                            src="/assets/images/footer-logo-mega-fi.png"
+                            src="/assets/images/crown2.png"
                             className="Image-fluid"
-                            alt="MegaFi"
+                            alt="Monaarchy"
+                            width="80"
+                            height="80"
                         />
                         <div className="row mt-3 mt-md-5">
                             <p>

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="LandingPage">
       <Head>
-        <title>MegaFi</title>
+      <title>Monaarchy</title>
         <meta charset="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
