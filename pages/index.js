@@ -55,7 +55,7 @@ export default function Home() {
                 <h1>Our Value</h1>
                 <p className="mt-3">
                 NFT DeFi has low liqudity and low activities compared to cryptocurrencies DeFi.
-                Unleashing confidence in the DeFi economy By insuring the lenders to increase activities.
+                Unleashing confidence in the DeFi economy by insuring the lenders to increase activities.
                 </p>
 
 
