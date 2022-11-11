@@ -88,7 +88,7 @@ export default function Home() {
                 <div className="row mt-5 mb-5"></div>
                 <h1>DeFi</h1>
                 <p className="mt-4">
-                DeFi (or "decentralized finance") is an umbrella term for financial services on public blockchains, primarily Ethereum. With DeFi, you can do most of the things that banks support — earn interest,
+                DeFi (or &ldquo;decentralized finance&ldquo;) is an umbrella term for financial services on public blockchains, primarily Ethereum. With DeFi, you can do most of the things that banks support — earn interest,
                  borrow, lend, buy insurance, trade derivatives, trade assets,
                   and more — but it&apos;s faster and doesn&apos;t require paperwork or a third party.
                 </p>
