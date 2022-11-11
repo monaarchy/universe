@@ -15,7 +15,7 @@ function Navbar(navprops) {
             <div className="container-fluid">
               <Link href="/swap">
                 <a className="navbar-brand">
-                 <img src="/assets/images/crown2.png" alt="monaarchy"  width="60" height="60" />
+                <img src="/assets/images/crown2.png" alt="monaarchy"  width="60" height="60" />
                 </a>
               </Link>
               <button
@@ -41,14 +41,14 @@ function Navbar(navprops) {
                       {/* Home */}
                     </a>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link
                       href="/aboutus"
                     >
                       <a className="nav-link">About Us</a>
                     </Link>
                 
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <Link
                       href="/giveaway"
@@ -79,13 +79,13 @@ function Navbar(navprops) {
                       Protocol Docs
                     </a>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link href="/nft">
                       <a className="nav-link">
                         NFTs
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li className={dashboardstatus ? "hide" : "nav-item"}>
                     <Link href="/swap">
                       <a className="nav-link">
