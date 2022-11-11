@@ -38,7 +38,7 @@ function Footer() {
                             {/* <a href="#"> Careers</a> */}
                         </p>
                         <p className="mt-4">
-                            <a href="https://medium.com/@megafiprotocol" target="_blank" rel="noopener noreferrer">  Blog</a>
+                            <a href="https://medium.com/@monaarchy" target="_blank" rel="noopener noreferrer">  Blog</a>
                         </p>
                     </div>
                     <div className="col-lg-4 mb-4">
