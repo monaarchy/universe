@@ -90,7 +90,7 @@ export default function Home() {
                 <p className="mt-4">
                 DeFi (or "decentralized finance") is an umbrella term for financial services on public blockchains, primarily Ethereum. With DeFi, you can do most of the things that banks support — earn interest,
                  borrow, lend, buy insurance, trade derivatives, trade assets,
-                  and more — but it's faster and doesn't require paperwork or a third party.
+                  and more — but it&apos;s faster and doesn&apos;t require paperwork or a third party.
                 </p>
 
 
