@@ -53,14 +53,57 @@ export default function Home() {
             <div className="col-lg-3">
               <div className="row mt-5 mb-5">
                 <h1>Our Value</h1>
-                <p className="mt-3">
+                <p className="mt-4">
                 NFT DeFi has low liqudity and low activities compared to cryptocurrencies DeFi.
                 Unleashing confidence in the DeFi economy by insuring the lenders to increase activities.
+                
+                
                 </p>
+
+          
+
+                
+
+                
+                
 
 
               </div>
+              <div className="row mt-5 mb-5"></div>
+              <h1>Insurnace</h1>
+                <p className="mt-4">
+                Insurance is a means of protection from financial loss in which, in exchange for a fee, 
+                a party agrees to guarantee another party compensation in the event of a certain loss, 
+                damage, or injury. It is a form of risk management,
+                 primarily used to hedge against the risk of a contingent or uncertain loss.
+                </p>
+
+            
+
+          
+                
+
+                
+
+                <div className="row mt-5 mb-5"></div>
+                <h1>DeFi</h1>
+                <p className="mt-4">
+                DeFi (or "decentralized finance") is an umbrella term for financial services on public blockchains, primarily Ethereum. With DeFi, you can do most of the things that banks support — earn interest,
+                 borrow, lend, buy insurance, trade derivatives, trade assets,
+                  and more — but it's faster and doesn't require paperwork or a third party.
+                </p>
+
+
+
             </div>
+
+            
+            
+            
+            
+
+
+            
             <div className="col-lg-7 ms-lg-auto mx-sm-2">
               <div className="row mb-2 px-4 px-md-0 px-lg-0">
                 <div className="col-lg-5 mission-box p-4 px-5 m-3 mx-0 mx-md-3">
