@@ -54,7 +54,7 @@ export default function Home() {
               <div className="row mt-5 mb-5">
                 <h1>Our Value</h1>
                 <p className="mt-3">
-                NFTs DeFi has low liqudity and low activities compared to cryptocurrencies DeFi.
+                NFT DeFi has low liqudity and low activities compared to cryptocurrencies DeFi.
                 Unleashing confidence in the DeFi economy By insuring the lenders to increase activities.
                 </p>
 
