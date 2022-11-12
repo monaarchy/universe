@@ -70,8 +70,8 @@ export default function Home() {
 
               </div>
               <div className="row mt-5 mb-5"></div>
-              <h1>Insurnace</h1>
-                <p className="mt-4">
+              <h1>Insurance</h1>
+                <p className="mt-5">
                 Insurance is a means of protection from financial loss in which, in exchange for a fee, 
                 a party agrees to guarantee another party compensation in the event of a certain loss, 
                 damage, or injury. It is a form of risk management,
@@ -87,7 +87,7 @@ export default function Home() {
 
                 <div className="row mt-5 mb-5"></div>
                 <h1>DeFi</h1>
-                <p className="mt-4">
+                <p className="mt-5">
                 DeFi (or &ldquo;decentralized finance&ldquo;) is an umbrella term for financial services on public blockchains, primarily Ethereum. With DeFi, you can do most of the things that banks support — earn interest,
                  borrow, lend, buy insurance, trade derivatives, trade assets,
                   and more — but it&apos;s faster and doesn&apos;t require paperwork or a third party.
