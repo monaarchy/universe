@@ -207,7 +207,7 @@ export default function Home() {
                 <h5 className="mb-4">Digital Bank In Your Pocket</h5>
                 <p>
                   {" "}
-                  Bank with your NFTs and dont need to worry again about any issues. The monaarchy and users with crowns cover you.
+                  Bank with your NFTs and don&apos;t need to worry again about any issues. The monaarchy and users with crowns cover you.
                 </p>
               </div>
               <div className="col-lg-3 mission-box p-4 px-5 m-2 m-md-4 mt-4">
