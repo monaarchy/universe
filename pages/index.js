@@ -175,7 +175,7 @@ export default function Home() {
             </div>
             <div className="col-lg-4 d-inline-block ms-auto">
                 <h2 className="black-text black-text-bold text-center text-md-start mx-auto">
-                  megaFi <br /> Tokens
+                  megaFi Tokens
                   <br /> Powers Our Economy{" "}
                 </h2>
               </div>
