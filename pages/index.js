@@ -145,8 +145,8 @@ export default function Home() {
                 </div>
                 <div className="col-lg-5 mission-box p-4 px-5 m-3 mx-0 mx-md-3">
                   <h5 className="mb-4">megaFi Monaarchs </h5>
-                  <p>megaFi monaarchs will provide you access to the entire patform as we open it up to insure the markets. 
-                    You will be able to purchase it with 300 $matic.
+                  <p>megaFi monaarchs will provide you access to the entire patform. 
+                    You will be able to purchase it for 300 $matic.
                   </p>
                 </div>
               </div>
