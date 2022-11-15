@@ -111,7 +111,7 @@ function Airdrop() {
                                     <div >
 
                                         <h1 className="text-center"> $megaFi Airdrop</h1>
-                                        <h6 className="text-center mt-5 mx-md-5">Welcome Galactic megaFian Hustlers! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go mega!
+                                        <h6 className="text-center mt-5 mx-md-5">Welcome to the airdrop! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go mega!
                                         </h6>
 
                                     </div>
@@ -156,13 +156,13 @@ function Airdrop() {
 
                                             <div className='mt-5 me-3 row'>
                                                 <div className='col-10'>
-                                                    <p className="lead">Share The Hustlers Airdrop</p>
+                                                    <p className="lead">Share The $megaFi Airdrop</p>
                                                 </div>
                                                 <div className="col-2">
                                                     <a className="twitter-button"
                                                         onClick={confirmTweet}
-                                                        href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20%23megafiairdrop.%20The%20internet%20of%20#NFTs%20at%20%40megafiprotocol."
-                                                        data-text="I just joined the #megafiairdrop. The internet of #NFTs at @megafiprotocol."
+                                                        href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20%23megafiairdrop.%20The%20internet%20of%20#NFTs%20at%20%40monaarchy."
+                                                        data-text="I just joined the #megafiairdrop. The internet of #NFTs at @monaarchy."
                                                         data-url=""
                                                         data-size="large"
                                                         data-related="airdrops,nfts"
