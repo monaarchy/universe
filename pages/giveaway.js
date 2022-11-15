@@ -195,8 +195,8 @@ function Giveaway() {
                             <div className="row d-flex ">
                                 <div className="col-lg-8 mx-1 mb-5 p-4 mission-box mission-radius mission-border mx-auto">
                                     <div >
-                                        <h1 className="text-center mt-3"> Hustlers Giveaway</h1>
-                                        <h6 className="text-center mt-5 mx-md-5"> If you &lsquo;re here, you are a NFT galactic Hustler. We giving away worlds first batch of Synthetic NFT mega Bored Apes Yacht Club and more. We want you to shine. Drop your polygon address make sure you join Discord, telegram, tweet about your excitement, and stay active on your mega grind. Please make sure you visit soon to learn who are the winners.
+                                        <h1 className="text-center mt-3"> The Crown Giveaway</h1>
+                                        <h6 className="text-center mt-5 mx-md-5"> If you &lsquo;re here, you are a NFT king or queen. We giving away worlds first batch of crowns and more. We want you to shine. Drop your polygon address make sure you join discord, telegram, tweet about your excitement, and stay active on your monaarchy grind. Please make sure you visit soon to learn who are the winners.
                                         </h6>
                                     </div>
                                     <form onSubmit={handleSubmitForm}>
@@ -307,13 +307,13 @@ function Giveaway() {
 
                                             <div className='mt-5 me-3 row'>
                                                 <div className='col-10'>
-                                                    <p className="lead">Share The Hustlers Giveaway</p>
+                                                    <p className="lead">Share The monaarchy Giveaway</p>
                                                 </div>
                                                 <div className="col-2">
                                                     <a className="twitter-button"
                                                         onClick={confirmTweetCheck}
-                                                        href="https://twitter.com/intent/tweet?text=hustled%20my%20way%20into%20%23the%20$megaFi%20Synthetic%20#BoredApesYachtClub%20and%20more%20#NFT%20giveaway%20at%20#polygon.%20The%20internet%20of%20#NFTs%20at%20%40megafiprotocol."
-                                                        data-text="hustled my way into the $megaFi Synthetic #BoredApesYachtClub and more #NFT giveaway at #polygon. The internet of NFTs at @megafiprotocol."
+                                                        href="https://twitter.com/intent/tweet?text=hustled%20my%20way%20into%20%23the%20$megaFi%20crowns%20#BoredApesYachtClub%20and%20more%20#NFT%20giveaway%20at%20#polygon.%20The%20internet%20of%20#NFTs%20at%20%40monaarchy."
+                                                        data-text="hustled my way into the $megaFi crowns #BoredApesYachtClub and more #NFT giveaway at #polygon. The internet of NFTs at @megafiprotocol."
                                                         data-url=""
                                                         data-size="large"
                                                         data-related="airdrops,nfts"
