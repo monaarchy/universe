@@ -76,7 +76,7 @@ function Navbar(navprops) {
                       className="nav-link"
                       href="https://monaarchy.github.io/docs/" target="_blank" rel="noopener noreferrer"
                     >
-                      Protocol Docs
+                      Whitepaper
                     </a>
                   </li>
                   {/* <li className="nav-item">
