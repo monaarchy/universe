@@ -312,8 +312,8 @@ function Giveaway() {
                                                 <div className="col-2">
                                                     <a className="twitter-button"
                                                         onClick={confirmTweetCheck}
-                                                        href="https://twitter.com/intent/tweet?text=hustled%20my%20way%20into%20%23the%20$megaFi%20crowns%20#BoredApesYachtClub%20and%20more%20#NFT%20giveaway%20at%20#polygon.%20The%20internet%20of%20#NFTs%20at%20%40monaarchy."
-                                                        data-text="hustled my way into the $megaFi crowns #BoredApesYachtClub and more #NFT giveaway at #polygon. The internet of NFTs at @megafiprotocol."
+                                                        href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20%23crowns%20giveaway%20The%20internet%20of%20NFTs%20at%20%40monaarchy.%20"
+                                                        data-text="I just joined the #crowns giveaway. The internet of #NFTs at @monaarchy."
                                                         data-url=""
                                                         data-size="large"
                                                         data-related="airdrops,nfts"
