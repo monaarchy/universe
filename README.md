@@ -1,4 +1,4 @@
-# Monaarchy
+# Monaarchy In Mars
 
 Your Internet of NFTs. Delivering High Quality DeFi Data To Insure The NFT Marketplace.
 Your Internet of NFTs. Delivering High Quality DeFi Data To Insure The NFT Marketplace. The blockchain brought about a revolution, providing an opportunity for all web users to benefit from the infrastructure of captured data distributed among different systems and apps, creating a completely inclusive and decentralized model. monaarchy enables web3 players to make the most out of the internet by providing an NFT DEFI platform to earn, trade, and accomplish success in different dimensions via synthetic NFTs called crowns.
