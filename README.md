@@ -3,7 +3,7 @@ Your Internet of NFTs. Delivering High Quality DeFi Data To Insure The NFT Marke
 
 The platform represents a rare model of distribution and interdependence using synthetic NFTs to empower investors and creators of digital assets. monaarchy will become the largest synthetic DEFI NFT community, by having the most reliable data creating a market for synthetic NFTs for investors to make the best decisions in NFT DeFi. Megafi participants would be able to purchase fragments of the original NFTs. The monaarchy community will be able to drive innovation in web3 and the creative world by generating unique ideas and needed liquidity, thus becoming a thriving model benefiting investors and creators worldwide. NFT Entrepreneurs and investors will be able to have clearer vision to minimize the risk. This Litepaper is the blueprint to completely illustrate the monaarchy vision to benefit the NFT applications. We first build DeFi use cases and in the future we move to non-financial use cases.
 
-The future of asset insurance.
+The future of digital asset insurance.
 
 Join our Discord!
 For any questions, suggestions, join our discord at https://discord.gg/a2tq4gDwjU
