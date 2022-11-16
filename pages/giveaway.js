@@ -240,13 +240,13 @@ function Giveaway() {
 
                                             <div className='mt-5 me-3 row'>
                                                 <div className='col-10'>
-                                                    <p className="lead">Share The Hustlers Giveaway</p>
+                                                    <p className="lead">Share The Crowns Giveaway</p>
                                                 </div>
                                                 <div className="col-2">
                                                     <a className="twitter-button"
                                                         onClick={confirmTweet}
-                                                        href="https://twitter.com/intent/tweet?text=hustled%20my%20way%20into%20%23the%20crowns%20and%20more%20#NFT%20giveaway%20at%20#polygon%20and%20#ethereum.%20The%20internet%20of%20#NFTs%20at%20%40monaarchy."
-                                                        data-text="hustled my way into the crowns and more #NFT giveaway at #polygon and #ethereum. The internet of NFTs at @monaarchy."
+                                                        href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20%23crown%20giveaway.%20The%20internet%20of%20NFTs%20at%20%40monaarchy.%20"
+                                                        data-text="I just joined the #crown giveaway. The internet of #NFTs at @monaarchy."
                                                         data-url=""
                                                         data-size="large"
                                                         data-related="airdrops,nfts"
@@ -307,7 +307,7 @@ function Giveaway() {
 
                                             <div className='mt-5 me-3 row'>
                                                 <div className='col-10'>
-                                                    <p className="lead">Share The monaarchy Giveaway</p>
+                                                    <p className="lead">Share The Crowns Giveaway</p>
                                                 </div>
                                                 <div className="col-2">
                                                     <a className="twitter-button"
