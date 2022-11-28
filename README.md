@@ -1,7 +1,6 @@
 # Monaarchy In Mars
 
 # Insurance Platform For borrowing and lending on Ethereum
-Introduction
 
 # Your Internet of NFTs. Delivering High Quality DeFi Data To Insure The NFT Marketplace.
 
