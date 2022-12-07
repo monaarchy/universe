@@ -152,10 +152,10 @@ export default function Home() {
           <div className="row p-5">
             <div className="col-lg-6">
               <p className="black-text text-center text-md-start">
-                We envision a world where is safer to transact in a decentralized manner.
+                We envision a world where NFTS strive like standard tokens in DeFi.
                 <br /> 
                 <br />
-                 We build alorithms that acclerates the DeFi economy forward.
+                 We building alorithms to help you succeed.
 
                 <br />
 
