@@ -113,7 +113,7 @@ export default function Home() {
                 <div className="col-lg-5 mission-box p-4 px-5 m-3 mx-0 mx-md-3">
                   <h5 className="mb-4">Liquidity</h5>
                   <p>
-                    We will be operating with compound liqudity pool.
+                    We will be operating with compound liquidity pool.
                   </p>
                 </div>
               </div>
