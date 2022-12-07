@@ -16,7 +16,7 @@ function Footer() {
                         />
                         <div className="row mt-3 mt-md-5">
                             <p>
-                                Internet Of NFTs.{" "}
+                                Borrowing And Lending Insurance{" "}
                             </p>
                         </div>
                     </div>

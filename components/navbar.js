@@ -87,16 +87,16 @@ function Navbar(navprops) {
                     </Link>
                   </li> */}
                   <li className={dashboardstatus ? "hide" : "nav-item"}>
-                    <Link href="/swap">
+                    {/* <Link href="/swap">
                       <a className="nav-link">
                         Buy $megaFi
                       </a>
-                    </Link>
+                    </Link> */}
                   </li>
                   <li className={dashboardstatus ? "nav-item" : "hide"}>
                     <div className="row ps-lg-5 pe-lg-5 mt-3 mt-lg-1">
-                      <Link href="/swap">
-                        <button className="btn btn-light  btn-lg btn-block" type="button">Dashboard</button>
+                      <Link href="https://www.youtube.com/@monaarchy/shorts">
+                        <button className="btn btn-light  btn-lg btn-block" type="button">Youtube</button>
                       </Link>
                     </div>
                   </li>

@@ -22,14 +22,14 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-6">
               <div className="row mt-5 mb-5">
-                <p className="top-heading">Internet Of </p>
+                <p className="top-heading">NFT Borrowing And Lending</p>
                 <p className="top-heading ">
-                  <b className="repeat ">NFTS</b>
+                  <b className="repeat ">Insurance</b>
                 </p>
               </div>
               <div className="row mb-5">
                 <p className="txt">
-                Insurance For The DeFi Economy. A Whole New Way To Engage With NFTs. The Next Stage Of Finance.
+                Monaarchy allow you to insure your NFTs in the borrowing and lending marketplace. Our vision reduce risks. We are in development launching soon. 
                 </p>
               </div>
               <div className="row">
@@ -54,7 +54,7 @@ export default function Home() {
               <div className="row mt-5 mb-5">
                 <h1>Our Value</h1>
                 <p className="mt-4">
-                NFT DeFi has low liqudity and low activities compared to cryptocurrencies DeFi.
+                
                 Unleashing confidence in the DeFi economy by insuring the lenders to increase activities.
                 
                 
@@ -70,7 +70,7 @@ export default function Home() {
 
               </div>
               <div className="row mt-5 mb-5"></div>
-              <h1>Insurance</h1>
+              {/* <h1>Insurance</h1>
                 <p className="mt-4">
                 Insurance is a means of protection from financial loss in which, in exchange for a fee, 
                 a party agrees to guarantee another party compensation in the event of a certain loss, 
@@ -91,7 +91,7 @@ export default function Home() {
                 DeFi (or &ldquo;decentralized finance&ldquo;) is an umbrella term for financial services on public blockchains, primarily Ethereum. With DeFi, you can do most of the things that banks support — earn interest,
                  borrow, lend, buy insurance, trade derivatives, trade assets,
                   and more — but it&apos;s faster and doesn&apos;t require paperwork or a third party.
-                </p>
+                </p> */}
 
 
 
@@ -107,16 +107,13 @@ export default function Home() {
             <div className="col-lg-7 ms-lg-auto mx-sm-2">
               <div className="row mb-2 px-4 px-md-0 px-lg-0">
                 <div className="col-lg-5 mission-box p-4 px-5 m-3 mx-0 mx-md-3">
-                  <h5 className="mb-4">What Are Crowns?</h5>
-                  <p>Crowns are Synthetic NFTs. They represent NFT collections backed by DeFi data. 
-                    Users can purchase crowns for a fragment of NFTs.   </p>
+                  <h5 className="mb-4">The Platform</h5>
+                  <p>We are providing a boost in the ethereum and compound enconomy.   </p>
                 </div>
                 <div className="col-lg-5 mission-box p-4 px-5 m-3 mx-0 mx-md-3">
                   <h5 className="mb-4">Liqudity</h5>
                   <p>
-                    Crowns create liqudity in the protocol which helps insurance economy strive. 
-                    Crowns reward Investors with compound interest for the liqudity. Monaarchy main focus is to own 65% 
-                    of the liqudity.
+                    We will be operating with compound liqudity pool.
                   </p>
                 </div>
               </div>
@@ -124,8 +121,7 @@ export default function Home() {
                 <div className="col-lg-5 mission-box p-4 px-5 m-3 mx-0 mx-md-3">
                   <h5 className="mb-4">Why Insurance?</h5>
                   <p>
-                    Insurance creates a well balance and stability economy for defaults digital assets. Lenders no longer depend on one buyer because of the liquadity created by 
-                    crowns.
+                    Insurance creates a well balance and stability economy for defaults digital assets. 
                   </p>
                 </div>
                 <div className="col-lg-5 mission-box p-4 px-5 m-3 mx-0 mx-md-3">
@@ -135,18 +131,15 @@ export default function Home() {
               </div>
               <div className="row mb-2 px-4 px-md-0 px-lg-0">
                 <div className="col-lg-5 mission-box p-4 px-5 m-3 mx-0 mx-md-3">
-                  <h5 className="mb-4">Lead Internet 3.0 With megaFi</h5>
+                  <h5 className="mb-4">Lead Internet 3.0 Banking With Us</h5>
                   <p>
-                    Become part of the third version of the internet and crown yourself with megaFi in the 21st century. MegaFi will allow you 
-                    to purchase crowns for you to earn and bring the next stage of finance.
-
+                    Become part of the third version of the internet and crown yourself.
         
                   </p>
                 </div>
                 <div className="col-lg-5 mission-box p-4 px-5 m-3 mx-0 mx-md-3">
-                  <h5 className="mb-4">megaFi Monaarchs </h5>
-                  <p>megaFi monaarchs will provide you access to the entire patform. 
-                    You will be able to purchase it for 300 $matic.
+                  <h5 className="mb-4">NFT Monaarchs </h5>
+                  <p>NFT monaarchs will be the future of NFTs. Stay tuned.
                   </p>
                 </div>
               </div>
@@ -175,7 +168,7 @@ export default function Home() {
             </div>
             <div className="col-lg-4 d-inline-block ms-auto">
                 <h2 className="black-text black-text-bold text-center text-md-start mx-auto">
-                  megaFi Tokens
+                  Compound
                   <br /> Powers Our Economy{" "}
                 </h2>
               </div>
@@ -185,10 +178,10 @@ export default function Home() {
       <div className="container-fluid bg-light pt-5 pb-5">
         <div className="container">
           <div className="row p-5">
-            <h1 className="text-center text-dark">Supported Chains</h1>
+            <h1 className="text-center text-dark">Supported Chain</h1>
             <div className="row mt-5">
               <div className="col-lg-3 mission-box mx-auto mt-3 mb-3">
-                <img className="img-fluid mw-100" src='/assets/images/polygon.png' alt='polygonlogo' />
+                <img className="img-fluid mw-100" src='/assets/images/eth-diamond-black.png' alt='polygonlogo' />
               </div>
             </div>
           </div>
@@ -200,8 +193,8 @@ export default function Home() {
             <h1 className="text-center mb-4">#MonaarchyYourNFT</h1>
             <div className="row mt-5 mx-auto justify-content-center">
               <div className="col-lg-3 mission-box p-4 px-5 m-2 m-md-4 mt-4">
-                <h5 className="mb-4">megaFi compound</h5>
-                <p>Put your digital assets to work for you buy learning about the megaFi & crown digital asset.</p>
+                <h5 className="mb-4"> Compound Your Assets</h5>
+                <p>Put your digital assets to work for you by learning about the digital assets via our youtube channel.</p>
               </div>
               <div className="col-lg-3 mission-box p-4 px-5 m-2 m-md-4 mt-4">
                 <h5 className="mb-4">Digital Bank In Your Pocket</h5>
@@ -211,7 +204,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="col-lg-3 mission-box p-4 px-5 m-2 m-md-4 mt-4">
-                <h5 className="mb-4">Monaarchy Investors, Developers & Innovators</h5>
+                <h5 className="mb-4"> Investors, Developers, And Innovators</h5>
                 <p>
                   monaaarchy Investors will bring the next million into DeFi. Innovators and Developers will build
                   on top of our solution to take us to the next level.
