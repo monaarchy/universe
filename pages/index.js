@@ -42,7 +42,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="loader"></div>
+              <div className="loader">Loading...</div>
             </div>
           </div>
         </div>
