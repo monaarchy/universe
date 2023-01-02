@@ -13,7 +13,7 @@ function Navbar(navprops) {
         <div className="row pt-2">
           <nav className="navbar navbar-expand-lg nav-bg">
             <div className="container-fluid">
-              <Link href="/swap">
+              <Link href="/">
                 <a className="navbar-brand">
                 <img src="/assets/images/crown2.png" alt="monaarchy"  width="60" height="60" />
                 </a>
