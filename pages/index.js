@@ -22,7 +22,7 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-6">
               <div className="row mt-5 mb-5">
-                <p className="top-heading">NFT Borrowing And Lending</p>
+                <p className="top-heading">NFT Lending</p>
                 <p className="top-heading ">
                   <b className="repeat ">Insurance</b>
                 </p>
