@@ -111,7 +111,7 @@ function Airdrop() {
                                     <div >
 
                                         <h1 className="text-center">Airdrop</h1>
-                                        <h6 className="text-center mt-5 mx-md-5">Welcome to the $megaFi airdrop! Please share your Eth address. Join our discord, follow our twitter, and tweet to be part of the drop!
+                                        <h6 className="text-center mt-5 mx-md-5">Welcome to the $megaFi airdrop! Please share your Eth address. Join our youtube, follow our twitter, and tweet to be part of the drop!
                                         </h6>
 
                                     </div>
