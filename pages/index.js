@@ -18,13 +18,14 @@ export default function Home() {
       <Navbar dashboard={true} connectwallet={false} />
       <hr />
       <div className="container-fluid ">
-        <div className="container bgs">
+        <div className="text-center container bgs">
           <div className="row">
-            <div className="col-lg-6">
-              <div className="row mt-5 mb-5">
-                <p className="top-heading">NFT Borrowing And Lending</p>
-                <p className="top-heading ">
-                  <b className="repeat ">Insurance</b>
+            {/* <div className=" text-center col-lg-6"> */}
+            <div className=" text-center">
+              <div className="text-center row mt-5 mb-5">
+                <p className="text-center top-heading">NFT Borrowing And Lending</p>
+                <p className="text-center top-heading ">
+                  <b className=" text-center repeat ">Insurance</b>
                 </p>
               </div>
               <div className="row mb-5">
@@ -42,7 +43,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="loader">Loading...</div>
+              {/* <div className="loader">Loading...</div> */}
             </div>
           </div>
         </div>
