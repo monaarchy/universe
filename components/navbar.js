@@ -65,11 +65,11 @@ function Navbar(navprops) {
                   </li>
                   
                   <li className="nav-item">
-                    {/* <Link href="/airdrop">
+                    <Link href="/airdrop">
                       <a className="nav-link">
                         Airdrop
                       </a>
-                    </Link> */}
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <a

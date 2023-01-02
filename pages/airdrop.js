@@ -110,8 +110,8 @@ function Airdrop() {
                                 <div className="col-lg-8 p-4 mission-box mission-radius mission-border mx-auto">
                                     <div >
 
-                                        <h1 className="text-center"> $megaFi Airdrop</h1>
-                                        <h6 className="text-center mt-5 mx-md-5">Welcome to the airdrop! Please share your polygon address. Join our Discord, follow our twitter, and tweet to be part of the drop. We look forward for your portfolio to go mega!
+                                        <h1 className="text-center">Airdrop</h1>
+                                        <h6 className="text-center mt-5 mx-md-5">Welcome to the $megaFi airdrop! Please share your Eth address. Join our discord, follow our twitter, and tweet to be part of the drop!
                                         </h6>
 
                                     </div>
@@ -124,7 +124,7 @@ function Airdrop() {
                                                         type="text"
                                                         className="form-control transparent-input-border text-end"
                                                         value={walletAddress}
-                                                        placeholder="Add Your Polygon Address"
+                                                        placeholder="Add Your ETH Address"
                                                     />
                                                 </div>
                                             </div>
