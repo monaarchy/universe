@@ -20,7 +20,7 @@ export default function Home() {
       <div className="container-fluid ">
         <div className="container bgs">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="text-center">
               <div className="row mt-5 mb-5">
                 <p className="top-heading">NFT Lending</p>
                 <p className="top-heading ">
@@ -42,7 +42,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="loader">Loading...</div>
+              <div className=""></div>
             </div>
           </div>
         </div>
