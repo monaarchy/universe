@@ -62,13 +62,13 @@ function Footer() {
                                     </Link>
                                 </div>
                             </div>
-                            {/* <div className="col-lg-4">
-                                <p className="icon p-2">
-                                    <a href="https://www.youtube.com/channel/UCcPcWN4irqZDgSpj9fJkBUg">
+                            <div className="col-lg-4">
+                                <p className="icon p-2 mt-3">
+                                    <a href="https://www.youtube.com/@monaarchy">
                                         <i className="fab fa-youtube" />
                                     </a>
                                 </p>
-                            </div> */}
+                            </div>
                         </div>
                         <div className="row">
                             {/* <div className="col-lg-4">
