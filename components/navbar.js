@@ -95,8 +95,8 @@ function Navbar(navprops) {
                   </li>
                   <li className={dashboardstatus ? "nav-item" : "hide"}>
                     <div className="row ps-lg-5 pe-lg-5 mt-3 mt-lg-1">
-                      <Link href="https://www.youtube.com/@monaarchy/shorts">
-                        <button className="btn btn-light  btn-lg btn-block" type="button">Youtube</button>
+                      <Link href="https://www.monaarchy.xyz/">
+                        <button className="btn btn-light  btn-lg btn-block" type="button">Get Merch + NFT</button>
                       </Link>
                     </div>
                   </li>
