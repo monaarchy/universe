@@ -191,7 +191,7 @@ export default function Home() {
       <div className="container-fluid pt-5 pb-5">
         <div className="container">
           <div className="row p-5 px-3 px-md-5">
-            <h1 className="text-center mb-4">#MonaarchyYourNFT</h1>
+            <h1 className="text-center mb-4">#MonaarchyInsurance</h1>
             <div className="row mt-5 mx-auto justify-content-center">
               <div className="col-lg-3 mission-box p-4 px-5 m-2 m-md-4 mt-4">
                 <h5 className="mb-4"> Compound Your Assets</h5>
