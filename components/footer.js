@@ -64,9 +64,14 @@ function Footer() {
                             </div>
                             <div className="col-lg-4">
                                 <p className="icon p-2 mt-3">
-                                    <a href="https://www.youtube.com/@monaarchy">
+                                    <Link href="https://www.youtube.com/@monaarchy">
+                                        <a className="nav-link" target="_blank" rel="noopener noreferrer">
+
                                         <i className="fab fa-youtube" />
                                     </a>
+                                    </Link>
+
+
                                 </p>
                             </div>
                         </div>
