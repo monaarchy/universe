@@ -109,7 +109,7 @@ function BuyInsurance() {
                                           <h5>MFI</h5>
                                         </div>
                                         <div className="row">
-                                          <p>MegaFi</p>
+                                          <p>crowns</p>
                                         </div>
                                       </div>
                                     </div>
@@ -133,7 +133,7 @@ function BuyInsurance() {
                                           <h5>MFI</h5>
                                         </div>
                                         <div className="row">
-                                          <p>MegaFi</p>
+                                          <p>crowns</p>
                                         </div>
                                       </div>
                                     </div>
@@ -155,7 +155,7 @@ function BuyInsurance() {
                 <div className="container">
                   <div className="row p-5">
                     <div className="col-lg-4">
-                      <img src="images/footer-logo-mega-fi.png" className="img-fluid" alt="MegaFi" />
+                      <img src="images/footer-logo-mega-fi.png" className="img-fluid" alt="monaarchy" />
                       <div className="row mt-5">
                         <p>MegaFi allow you to discover emerging non-fungible token(NFT). </p>
                       </div>
